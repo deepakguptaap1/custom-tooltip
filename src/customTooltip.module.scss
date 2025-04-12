@@ -1,0 +1,224 @@
+.wrapper {
+  cursor: pointer;
+  position: relative;
+}
+.message {
+  position: absolute;
+  border: 0.0625rem solid black;
+  padding: 0.375rem;
+  border-radius: 0.3125rem;
+  min-height: 1.125rem;
+  line-height: 1rem;
+  width: 10rem;
+  background-color: rgb(255, 212, 18);
+  color: rgb(255, 51, 0);
+  z-index: 999;
+}
+.top-left {
+  bottom: calc(100% + 0.625rem);
+  left: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.625rem);
+    left: 0.9375rem;
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    background-color: rgb(255, 212, 18);
+    border: 0.0625rem solid black;
+    border-radius: 20%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+.top-center {
+  bottom: calc(100% + 0.625rem);
+  left: 50%;
+  transform: translateX(-50%);
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.625rem);
+    left: 50%;
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    background-color: rgb(255, 212, 18);
+    border: 0.0625rem solid black;
+    border-radius: 20%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+.top-right {
+  bottom: calc(100% + 0.625rem);
+  right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.625rem);
+    left: calc(100% - 0.9375rem);
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    background-color: rgb(255, 212, 18);
+    border: 0.0625rem solid black;
+    border-radius: 20%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+.right-top {
+  top: 0%;
+  left: calc(100% + 0.625rem);
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border: 0.0625rem solid black;
+    background-color: rgb(255, 212, 18);
+    border-radius: 20%;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    top: 0.9375rem;
+    right: calc(100% - 0.625rem);
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+.right-center {
+  top: 50%;
+  left: calc(100% + 0.625rem);
+  transform: translateY(-50%);
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border: 0.0625rem solid black;
+    background-color: rgb(255, 212, 18);
+    border-radius: 20%;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    top: 50%;
+    right: calc(100% - 0.625rem);
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+.right-bottom {
+  bottom: 0%;
+  left: calc(100% + 0.625rem);
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border: 0.0625rem solid black;
+    background-color: rgb(255, 212, 18);
+    border-radius: 20%;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    top: calc(100% - 0.9375rem);
+    right: calc(100% - 0.625rem);
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+.bottom-left {
+  top: calc(100% + 0.625rem);
+  left: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: calc(100% - 0.625rem);
+    left: 0.9375rem;
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    background-color: rgb(255, 212, 18);
+    border: 0.0625rem solid black;
+    border-radius: 20%;
+    transform: translateX(-50%) rotate(225deg);
+  }
+}
+.bottom-center {
+  top: calc(100% + 0.625rem);
+  left: 50%;
+  transform: translateX(-50%);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: calc(100% - 0.625rem);
+    left: 50%;
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    background-color: rgb(255, 212, 18);
+    border: 0.0625rem solid black;
+    border-radius: 20%;
+    transform: translateX(-50%) rotate(225deg);
+  }
+}
+.bottom-right {
+  top: calc(100% + 0.625rem);
+  right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: calc(100% - 0.625rem);
+    left: calc(100% - 0.9375rem);
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    background-color: rgb(255, 212, 18);
+    border: 0.0625rem solid black;
+    border-radius: 20%;
+    transform: translateX(-50%) rotate(225deg);
+  }
+}
+.left-top {
+  top: 0;
+  right: calc(100% + 0.625rem);
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border: 0.0625rem solid black;
+    background-color: rgb(255, 212, 18);
+    border-radius: 20%;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    top: 0.9375rem;
+    left: calc(100% - 0.625rem);
+    transform: translateY(-50%) rotate(315deg);
+  }
+}
+.left-center {
+  top: 50%;
+  right: calc(100% + 0.625rem);
+  transform: translateY(-50%);
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border: 0.0625rem solid black;
+    background-color: rgb(255, 212, 18);
+    border-radius: 20%;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    top: 50%;
+    left: calc(100% - 0.625rem);
+    transform: translateY(-50%) rotate(315deg);
+  }
+}
+.left-bottom {
+  bottom: 0;
+  right: calc(100% + 0.625rem);
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border: 0.0625rem solid black;
+    background-color: rgb(255, 212, 18);
+    border-radius: 20%;
+    clip-path: polygon(100% 6%, 6% 100%, 100% 100%);
+    top: calc(100% - 0.9375rem);
+    left: calc(100% - 0.625rem);
+    transform: translateY(-50%) rotate(315deg);
+  }
+}
