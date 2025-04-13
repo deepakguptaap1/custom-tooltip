@@ -8,7 +8,7 @@ function App() {
       <CustomTooltip
         placement={text.replace(" ", "-").toLowerCase() as placement}
         message={`This Shows the ${text} position of tooltip.`}
-        strictPosition={true}
+        key={text}
       >
         <div className={styles.tooltipBase}>{text}</div>
       </CustomTooltip>

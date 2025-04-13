@@ -1,15 +1,15 @@
 export type placement =
   | "top-left"
-  | "top"
+  | "top-center"
   | "top-right"
   | "right-top"
-  | "right"
+  | "right-center"
   | "right-bottom"
   | "bottom-left"
-  | "bottom"
+  | "bottom-center"
   | "bottom-right"
   | "left-top"
-  | "left"
+  | "left-cente"
   | "left-bottom";
 
 export interface toolTipProps {
@@ -17,5 +17,15 @@ export interface toolTipProps {
   className?: string;
   placement?: placement;
   message: string;
-  strictPosition?: boolean;
+}
+
+export interface SpaceAroundProps {
+  top: number;
+  right: number;
+  bottom: number;
+  left: number;
+  baseWidth: number;
+  baseHeight: number;
+  tooltipWidth: number;
+  tooltipHeight: number;
 }
