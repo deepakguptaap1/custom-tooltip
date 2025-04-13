@@ -4,7 +4,7 @@ import { SpaceAroundProps, toolTipProps } from "./types";
 const CustomTooltip: React.FC<toolTipProps> = ({
   children,
   className,
-  placement = "",
+  placement = "top-center",
   message,
 }) => {
   const [isActive, setIsActive] = useState<boolean>(false);
