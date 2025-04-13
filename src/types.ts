@@ -9,7 +9,7 @@ export type placement =
   | "bottom-center"
   | "bottom-right"
   | "left-top"
-  | "left-cente"
+  | "left-center"
   | "left-bottom";
 
 export interface toolTipProps {
